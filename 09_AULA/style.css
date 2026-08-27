@@ -1,0 +1,45 @@
+body {
+    
+ background-color: navajowhite;
+ text-align: center;
+
+}
+
+/* Estilização via tag */
+ul {
+  list-style: none;
+  background-color: cadetblue;
+
+}
+li {
+
+  background-color: cadetblue;
+  color: paleturquoise;
+
+  /* Largura e altura */
+  width: 200px;
+  height: 35px;
+  /* Tamanho da letra */
+  font-size: 30px;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto ;
+  
+}
+
+h2{
+    color: darkgray;
+    font-size: 50px;
+    font-style:oblique;
+    font-weight:900;
+    border-style:outset;
+    border-width: 15px;
+    border-color: blue;
+
+    /* familia: trocar estilo da fonte */
+
+    font-family:'Segoe UI', 'Times New Roman',
+     serif;
+
+}
+
