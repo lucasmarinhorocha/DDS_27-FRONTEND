@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+header{
+    background-color: rgb(141, 141, 141);
+    color:azure;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} 
+
+main{
+background-color:  red;
+text-align: center;
+height: 300px;
+
+
+       /* padding-top: 120px; */
+       
+
+}
+
+.caixa{
+    background-color: green;
+    
+    height: 90px;
+    width: 800px;
+    
+    
+
+     margin: 0px auto ; 
+
+        
+}
+
+
+footer{
+
+    background-color: dimgray;
+}
