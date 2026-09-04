@@ -33,6 +33,7 @@ body {
   font-style: italic;
 }
 
+
 .bloco {
   background-color: goldenrod;
   padding: 10px;
@@ -44,16 +45,88 @@ body {
 
 .destaque{
     background-color: gold;
+    text-align: center;
+
 }
 
 .texto-destaque{
     color: red;
     font-weight: bold;
+    text-align: center;
 }
 
 #caixa-unica{
 padding: 10px;
-border: 2px solid;
-border-color: rgb(34, 3, 105);
-background-color: #e76938;
+border: 2px dashed ;
+border-color: purple;
+background-color: #ede9fe;
+}
+
+/* Seleciona todos os 'p' que estão dentro de uma div */
+div p{ 
+  color: blue;
+}
+/* Seleciona todos os "p" que são filhos diretos da class específica */
+.pai-direto > p{
+  color: rgb(17, 199, 71);
+}
+
+/* Seleciona todo "p" após um h3, desde que seja irmão  */
+
+h3 + p  {
+  background-color: aqua;
+}
+
+/* Seleciona todos os "p"  que vem após o h4, desde que sejam irmões*/
+h4 ~ p{
+color: green;
+font-weight:bold;
+}
+
+/* Seleciona todos os inputs, que tinham o tipo de texto */
+input[type="text"]{
+  border: 2px solid orange;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+/* Seleciona todos os links que tenham esse nome no HREF */
+a[href*="microsoft"] {
+  color: green;
+  font: bolder;
+}
+
+/* Seleciona 2 ou mais para receberem o mesmo atributo */
+h5, h6 {
+  color: rgb(154, 5, 184);
+  margin: 5px;
+  font-weight: bolder;
+}
+
+
+
+.botao.ativo{
+  padding:20px;
+  font-size: 30px;
+  color: rgb(34, 146, 146);
+  border-radius: 20px;
+  background-color:hotpink;
+}
+
+/* Seleciona o 'p' em todas as classes aviso */
+
+p.aviso{
+  color:chartreuse
+}
+
+/* Seleciona apenas a DIV que tenha ID PAINEL */
+div#painel{
+  background-color: brown;
+  padding: 20px;
+}
+
+
+/* Selecionando filho dentro de filho */
+#menu ul li a{
+  color:violet
 }
