@@ -161,3 +161,40 @@ input:disabled{
     color: darkblue;
     font-size: 30px
 }
+/* PSEUDO ELEMENTOS */
+/* insere itens antes do elementos */
+
+h2::before{
+  content: "(❁´◡`❁) ";
+  color: black;
+}
+
+/* Insere itens depois do elemento */
+
+h2::after{
+    content:" (⊙_◎)";
+    color: rgb(158, 95, 12);
+}
+
+/* alteração da palavra de apoio  */
+
+input::placeholder{
+    color: green;
+    font-style: italic;
+    font-weight: bolder;
+
+}
+/* Estiliza o texto selecionado */
+
+::selection{
+    background-color: blue;
+    color: rgb(6, 236, 140)
+}
+
+/* estilizando os marcadores */
+.lista-marker li::marker{
+    content: ">";
+    color: rgb(70, 137, 224);
+    font-size: 25px;
+    
+}
