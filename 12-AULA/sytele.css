@@ -1,0 +1,163 @@
+/* IMPORTAÇÃO DE FONTES DO GOOGLE VIA URL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilização geral do corpo da página */
+body {
+    background-color: rgb(246, 247, 245);
+    color: rgb(209, 36, 36);
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilização do H1 */
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    text-align: left;
+    width: 500px;
+
+    
+    
+}
+
+div {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilização do H2 */
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+
+h1,h2{
+    font-family: "Roboto",sans-serif;
+    color: rgb(31, 125, 148);
+}
+
+.bloco{
+    background-color: blanchedalmond;
+    border: 2px solid gray;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* IMPORTAR FONTS DO PROJEOT */
+
+@font-face {
+    font-family: "Oswald";
+    src: url(./Fonts/Oswald.ttf);
+}
+
+p{
+    font-family: "Oswald";
+    font-size: 15px;
+    color:crimson;
+}
+
+a{
+    color: orange;
+    text-decoration: none;
+}
+
+/* Linkas não visitados */
+a:link{
+    color: brown;
+}
+/* Links visitados */
+a:visited{
+    color: blueviolet;
+}
+
+/* Link que está ativo */
+a:active{
+    color:cadetblue;
+}
+/* quando passa o mouse em cima */
+a:hover{
+    color: black;
+    font-size: 30px;
+
+}
+
+/* Quando passam o mouse em cima */
+button:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+/* botão quando ativa */
+
+button:active{
+
+    transform: scale(1.5,1.5);
+    transform: rotate(15deg);
+    transition: 1s;
+
+}
+input:focus{
+    outline: none;
+    border: 2px solid black;
+
+        /* transform: rotateZ(15deg); */
+}
+
+input:required{
+    border: 2px solid rgb(3, 34, 6);
+}
+input:valid{
+    background-color: rgb(143, 143, 175);
+}
+
+input:invalid{
+    background-color: red;
+}
+
+input:checked{
+    accent-color: chartreuse;
+}
+
+input:disabled{
+    background-color: cornflowerblue;
+}
+
+/* Seleciona o primeiro filhp */
+
+.lista-exemplo li:first-child{
+    color: cadetblue;
+    list-style:inside;
+    font-style: italic;
+}
+
+.lista-exemplo li:last-child{
+    color: beige;
+    background-image: linear-gradient(45deg,pink 40%,red 60%);
+
+    height: 60px;
+    list-style:lower-alpha;
+}
+
+
+.lista-exemplo li:nth-child(3){
+    background-color: rgb(162, 226, 43);
+    width: 50%;
+}
+
+.caixa-vazia:empty{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(201, 123, 21);
+}
+
+.texto-especial::first-letter{
+    font-size: 50px;
+}
+
+.texto-especial::first-line{
+    color: darkblue;
+    font-size: 30px
+}
