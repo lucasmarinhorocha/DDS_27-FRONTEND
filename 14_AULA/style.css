@@ -1,0 +1,168 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Variaveis */
+:root {
+  --font-main: "Segoe UI", sans-serif;
+  --color-primary: red;
+  --color-text: brown;
+  --color-bg-page: rgb(219, 216, 216);
+  --color-bg-box: rgb(205, 208, 211);
+  --color-white: white;
+  --color-gray: gray;
+  /* ESTADOS E EXEMPLOS */
+  --blue-bg: rgb(116, 232, 236);
+  --blue-border: black;
+  --green-bg: rgb(16, 175, 127);
+  --green-border: rgb(92, 3, 133);
+  --yellow-bg: rgb(238, 235, 58);
+  --yellow-border: rgb(235, 156, 9);
+
+  /* Comparação */
+
+  --comparacao-block-bg: lightblue;
+  --comparacao-incline-bg: lightgreen;
+  --comparacao-incline-blcok-bg: rgb(241, 167, 238);
+  --observacao-bg: rgb(24, 57, 65);
+
+  /* Medidas */
+
+  --radius: 10px;
+  --gap: 10px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg-page);
+  color: var(--color-text);
+  margin: 20px;
+}
+
+h1,
+h2 {
+  color: var(--color-primary);
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+h3 {
+  margin-top: 25px;
+}
+p {
+  line-height: 1.7;
+}
+
+.bloco {
+  background-color: var(--color-bg-box);
+  border: 0.5px solid var(--color-gray);
+  border-radius: var(--radius);
+  margin-bottom: 25px;
+  padding: 20px;
+}
+
+/* Comparação */
+
+.comparacao {
+  border: 2px dashed var(--color-gray);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* Observação */
+
+.observacao{
+    color: var(--observacao-bg);
+    border-left: 5px solid var(--color-primary);
+    
+    padding: 12px;
+}
+
+/* Display Block */
+
+.exemplo-block div{
+
+    display:block;
+    background-color: var(--blue-bg);
+    border: 2px solid var(--blue-border);
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 50%;
+}
+
+
+.comparacao.block div{
+    display: block;
+    background-color: var(--comparacao-block-bg);
+    padding: 15px;
+    margin-bottom:5px ;
+}
+
+/* DISPLAY INLINE */
+.exemplo-inline span{
+    display: inline;
+    background-color: var(--green-bg);
+    border: 0.5px solid var(--green-border);
+    padding: 1px;
+    margin-left: 30px;
+    /* margin top e bottom e o width não funciona pela propriedade do inline */
+}
+.comparacao.inline span{
+    display: inline;
+    background-color: var(--comparacao-incline-bg);
+    padding: 10px;
+}
+
+/* DISPLAY INLINE-BLOCK */
+.exemplo-inline-block div{
+    display: inline-block;
+    background-color: var(--yellow-bg);
+    border: 2px solid var(--yellow-border);
+    padding: 15px;
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+    /* alinhamento do texto */
+    text-align: center;
+    line-height: 150px;
+
+}
+
+.comparacao.inline-block div{
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    background-color: var(--comparacao-incline-blcok-bg);
+    padding: 25px;
+    margin: 20px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.none-exemplo {
+    gap: var(--gap);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 25px;
+    text-align: center;
+}
+
+.none-exemplo div {
+    flex: 1;
+    gap: var(--gap);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 25px;
+    text-align: center;
+}
+
+.none-exemplo .elemento-oculto{
+    display: none;
+}
