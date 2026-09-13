@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    position: static;
+}
+
+
+.caixa{
+ 
+    color:orange;
+  
+    width: 100%;
+    height: 50px;
+   
+}
+img{
+    width: 500px;
+    height: 200px;
+    position: relative;
+    bottom: 250px;
+    left: 60px;
+}
+h1{
+    position: relative;
+    margin: 0 auto;
+    background-color: blue;
+}
+.interna{
+    position: absolute;
+    background-color: blue;
+    width: 350px;
+    height: 150px;
+    margin: 0 auto;
+
+    right: 220px;
+    border-radius: 90px;
+
+    display: flex;             /* Define o elemento como container flexível */
+    justify-content: center;   /* Centraliza no eixo horizontal (esquerda-direita) */
+    align-items: center;       /* Centraliza no eixo vertical (cima-baixo) */
+}
+.externa{
+    background-color: rgb(243, 191, 78);
+    height: 300px;
+    display: flex;             /* Define o elemento como container flexível */
+  justify-content: center;   /* Centraliza no eixo horizontal (esquerda-direita) */
+  align-items: center;       /* Centraliza no eixo vertical (cima-baixo) */
+}
+
+.menu-fixo {
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: inline;    
+}

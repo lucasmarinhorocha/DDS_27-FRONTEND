@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;    
+}
+h1{
+    font-size: 60px;
+}
+.icones{
+    
+    width: 55px;
+    height: 55px;
+    font-size: 50px;
+    color:blue;
+    background-color: gray;
+    margin: -5px;
+    border: 0px solid ;
+    border-end-end-radius: 10px;
+    border-start-end-radius: 10px;
+    margin-left: 20px;
+    transition: 1s;
+    
+}
+
+.icones:hover{
+    color:purple;
+    background-color: aliceblue;
+    font-size: 60px;
+    transition: 1s;
+}
