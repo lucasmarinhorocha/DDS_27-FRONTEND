@@ -1,7 +1,3 @@
-* {
-  margin: 0 auto;
-  padding: 0;
-}
 
 /* Variaveis */
 :root {
@@ -165,4 +161,125 @@ p {
 
 .none-exemplo .elemento-oculto{
     display: none;
+}
+
+/* Display flex */
+
+.exemplo-flex{
+ 
+  display: flex;
+  background-color: blanchedalmond;
+  gap: var(--gap);
+  
+}
+
+.exemplo-flex div{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 25px;
+  flex:1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+  margin: 5px;
+}
+
+/* Flex direction */
+
+.flex-direction-row{
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap);
+  background-color: beige;
+}
+
+.flex-direction-row div,
+  .flex-direction-column div{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 15px;
+    text-align: center;
+  }
+
+  .flex-direction-column{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    gap: var(--gap);
+    padding: 15px;
+  
+  }
+
+/* Justify content */
+/* Caixas internas ou filhos */
+.justify-start div, .justify-center div, .justify-between div {
+  background-color: var(--color-primary);
+  padding: 15px 25px;
+  color: var(--color-white);
+}
+
+/* Os pais */
+.justify-start, .justify-center, .justify-between {
+  display: flex;
+  background-color: var(--color-bg-box);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Alinhamento ao começo */
+.justify-start {
+  justify-content: start;
+}
+
+/* Alinhamento ao centro */
+.justify-center {
+  justify-content: center;
+}
+
+/* Espaçamento entre os elementos */
+.justify-between {
+  /* Entre */
+  justify-content: space-between; 
+  /* em volta */
+  justify-content: space-around;
+}
+
+/* Aling-itens */
+.align-center{
+  display: flex;
+height: 180px;
+  background-color: rgb(5, 100, 100);
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.align-center div{
+  background-color: green;
+  color: var(--color-white);
+  padding: 15px;
+ 
+}
+.align-center .grande{
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/* GAP */
+.gap-exemplo{
+  display: flex;
+  gap: 30px;
+  background-color: pink;
+  padding: 20px;
+  
+}
+
+.gap-exemplo div{
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
