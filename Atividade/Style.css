@@ -1,18 +1,23 @@
 *{
     margin: 0;
     padding: 0;
-    position: static;
 }
 
 
 
 
+Nav div{
+    font-size: 12px;
+    border-radius: 90px;
+    width: 250px;
+    text-align: center;
+    background-color: aliceblue;
+}
 
-
-.menu-fixo  {
+Nav  {
     width: 100%;
-    height: 100px;
-    position: fixed;
+ height: 100px;
+ 
     background-color: rgb(243, 191, 78);
 
     display: flex;
@@ -21,37 +26,37 @@
     padding: 0 30px;
     box-sizing: border-box;
     border-bottom: 0.7px solid gray;
+
 }
 
 .menu-fixo h1, h3 {
-    margin: 50px;
-    padding: 50px 0;
+      
     font-style:oblique;
     font-weight: normal;
 }
 
-.menu-fixo p{
-    display: inline;
-    padding: 50px;
+.menu-fixo li{
+    
+
+    display: inline-block;
     font-size: 20px;
+    padding: 0 50px;
 }
 
 .menu-fixo nav{
     
-    display: flex;
-    gap: 50px;
+      justify-content:space-evenly;
+    
     margin: 0 auto;
 }
 
 .menu-fixo img{
     width: 70px;
     height: 70px;
-    padding: 50px;
+    padding: 0px 50px;
     object-fit: contain;
 }
-main{
-    margin-top: 100px;
-}
+
 
 .Secção{
     background-color: antiquewhite;
@@ -60,23 +65,45 @@ main{
 .Secção div.box{
     display: flex;
     justify-content: end;
+    align-items: center;
     width: 100%;
-    height: 600px;
-background-color: brown
-;}
+    height: 180px;
+background-color: brown;
+}
 .Secção div.aba{
-    text-align: right;
+    margin-right: 30px;
     border: 2px solid;
     border-radius: 20px;
 
    box-shadow: 5px 5px 0px #000000;
-    margin: 20px 50px;
-    padding: 50px;
+    
     background-color: aqua;
-    height: 320px;
+    height: 145px;
 }
-.Secção div.aba p{
-    padding: 50px;
+
+.TEXTO{
+    padding: 20px;
+    font-size: 20px;   
+}
+
+.footer-1{
+
+      margin-left: 70%; 
+    background-color: blueviolet;
     display: flex;
-    justify-content: end
+    
+  
+    height: 150px;
+    justify-content:end ;
+    align-items: center;
+    
+    
+}
+.footer-1 li{
+    background-color: rgb(108, 159, 189);
+    color:whitesmoke ;
+    list-style: none;
+      justify-content:end ;
+      flex-direction:column;
+      margin-right: 30px;
 }
