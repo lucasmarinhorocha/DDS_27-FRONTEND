@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./form.css" />
+    <title>Contato - PixelForge Studios</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-fixo">
+        <nav>
+          <img src="./Imagens/Logo_Temporaria.png" alt="Logo" />
+          <div class="Caixa-menu">
+            <h1>PixelForge Studios</h1>
+            <h3>Diversão com pouco gasto</h3>
+          </div>
+          <ul>
+            <li><a href="./Index.html">Home</a></li>
+            <li><a href="./Conteúdo.html">Conteúdo</a></li>
+            <li><a href="./Portfólio.html">Portfólio</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+ 
+    <main>
+      <section class="Secção-contato">
+        <h1>Fale conosco</h1>
+        <p class="subtitulo">Preencha o formulário abaixo e retornaremos em breve.</p>
+ 
+        <form class="form-contato">
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+          </div> 
+          <!-- Estrutura de um campo de mensagem,  -->
+ 
+          <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+          </div>
+ 
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+          </div>
+ 
+          <div class="campo">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="" disabled selected>Selecione um assunto</option>
+              <option value="duvida">Dúvida sobre um jogo</option>
+              <option value="parceria">Proposta de parceria</option>
+              <option value="suporte">Suporte técnico</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+ 
+          <div class="campo campo-mensagem">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          </div>
+ 
+          <button type="submit" class="botao-enviar">Enviar mensagem</button>
+        </form>
+      </section>
+    </main>
+ 
+    <footer>
+      <div class="algo">
+        <ul class="footer-2">
+          <li>Emeil fictício</li>
+          <li>telefone fictício</li>
+          <li>2026</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
+ 
