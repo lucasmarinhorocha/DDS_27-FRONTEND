@@ -1,0 +1,207 @@
+/* RESET */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* BASE */
+
+body {
+  background-color: rgb(238, 238, 199);
+  font-family: "inter", sans-serif;
+  background-color: aliceblue;
+  color: rgb(41, 38, 38);
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0px auto;
+  max-width: 1200px;
+}
+
+/* TOPO */
+
+.topo{
+    background-color: darkslategray;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 3px 14px gray;
+    /* Sombreamento */
+}
+
+.navegacao{
+    display: flex;
+    min-height: 85px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 7px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a{
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 10px;
+    /* transition: 0.7s; */
+}
+.menu a:hover{
+    color: rgb(247, 5, 5);
+    background-color: antiquewhite;
+    transition: 0.7s;
+}
+
+/* HERO - GRID*/
+
+.hero{
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns:1.2fr 1fr ;
+    gap: 35px;
+    align-items: center;
+}
+
+.hero h1{
+    font-size: 45px;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero p{
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: darkolivegreen;
+}
+
+/* Inline */
+
+.etiqueta-inline{
+    display: inline;
+    background-color: rgb(196, 227, 230);
+    padding: 4.5px 8px;
+    color: blue;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.destaque-inline{
+    display: inline;
+    color: rgb(155, 8, 8);
+    font-weight: 700;
+}
+
+/* Botão */
+
+.botao{
+    display: inline-block;
+    background-color: aqua;
+    padding: 12px;
+    border-radius: 15px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.botao-primario{
+    background-color: rgb(231, 9, 9);
+    color: aliceblue;
+}
+.botao-secundario{
+    background-color: grey;
+    color: aliceblue;
+}
+
+.hero-imagem img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 2px 7px 17px gold;
+}
+
+/* Seções */
+
+.secao{
+    pad: 28px 0 52px 0;
+}
+
+.titulo-secao{
+     margin-bottom: 24px;
+}
+
+.titulo-secao h2{
+    font-size: 35px;
+    margin-bottom: 6px;
+}
+
+.titulo-secao p {
+    color: grey;
+}
+
+/* Blocks */
+
+.bloco-historia{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px black;
+}
+
+.caixa-block{
+    color: rgb(173, 2, 2);
+    margin-bottom: 15px;
+    font-weight: 600;
+    background: linear-gradient(60deg, rgb(233, 232, 230), rgb(190, 188, 188)
+    ) ;
+    border-radius: 15px;
+    padding: 25px;
+
+}
+
+/* FOOTER / GRID */
+
+.rodape{
+    background-color:black;
+    color: aliceblue;
+    margin-top: 50px;
+    padding: 40px 0;
+
+}
+.rodape-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    gap: 30px;
+}
+.rodape-grid h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.rodape-grid p {
+    color: gainsboro;
+    margin-bottom: 10px;
+}
