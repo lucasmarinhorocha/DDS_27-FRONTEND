@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+/* HEADER (mesmo padrão do restante do site) */
+header {
+    width: 100%;
+}
+
+.menu-fixo nav {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(243, 191, 78);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border-bottom: 0.7px solid gray;
+}
+
+.menu-fixo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.menu-fixo h1, .menu-fixo h3 {
+    font-style: oblique;
+    font-weight: normal;
+    text-align: center;
+}
+
+.menu-fixo ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.menu-fixo ul li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.menu-fixo ul li a:hover {
+    color: #fff;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.Secção-contato {
+    width: 100%;
+    max-width: 600px;
+    background-color: cadetblue;
+    border-radius: 20px;
+    border: 3px solid #000;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    text-align: center;
+}
+
+.Secção-contato h1 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #f0f0f0;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* FORMULÁRIO */
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-weight: bold;
+    color: #fff;
+    font-size: 15px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: #fff;
+    color: #1a1a1a;
+    outline: none;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: rgb(243, 191, 78);
+    box-shadow: 0 0 0 3px rgba(243, 191, 78, 0.5);
+}
+
+.campo-mensagem textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* BOTÃO DE ENVIO */
+.botao-enviar {
+    margin-top: 10px;
+    padding: 14px;
+    background-color: rgb(243, 191, 78);
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #1a1a1a;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.4);
+    transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.botao-enviar:hover {
+    background-color: rgb(220, 170, 60);
+    transform: translateY(-2px);
+}
+
+.botao-enviar:active {
+    transform: translateY(1px);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* FOOTER */
+.algo {
+    background-color: aquamarine;
+    color: rgb(7, 90, 163);
+}
+
+.footer-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 5px 15px;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .Secção-contota {
+        padding: 25px;
+    }
+}
