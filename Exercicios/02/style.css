@@ -5,7 +5,12 @@
     box-sizing: border-box; /* Garante que padding e border não estanquem a largura */
 }
 
+@font-face {
+    font-family: "Open Sans";
+    src: url("OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
 html, body {
+    font-family: "Open Sans", sans-serif;
     height: 100%;
     min-height: 100vh; /* Garante que o fundo cubra no mínimo 100% da altura da tela */
     background-color: #f7efe2; /* A cor de fundo padrão do seu site */
@@ -28,6 +33,23 @@ header{
    padding: 15px 0px;
 }
 
+#estilo{
+    gap: 5px;
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+}
+
+#estilo .nome {
+    text-decoration: underline;
+    
+}
+
+#estilo .material-symbols-outlined {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1;
+}
 
 nav {
     display: flex;
@@ -42,15 +64,30 @@ nav {
    
 }
 
-.logo{
+.logo,.botao{
     border: 1px solid black;
-    padding: 10px;
-    margin: 0px 60px;
+    margin: 0px 150px;
+    border-radius: 20%;
+}
+.logo{
+    padding: 15px 7px;
+}
+
+.botao button{
+    padding: 5px 15px;
+    background-color: rgb(116, 114, 114);
+    color: white;
+   border-radius: 20%;
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: black;
 }
 
 
 .servico{
-    
+    border: 1px solid black;
     padding: 25px 0px;
     background-color: cornsilk;
     display: flex;
@@ -79,6 +116,7 @@ section h1{
 }
 
 section {
+    border: 1px solid black;
     flex: 1;
     padding: 25px 0;
     background-color: beige;
@@ -98,14 +136,23 @@ section {
 }
 
 /* 3. Ajuste nos Cards individuais para preencherem a célula inteira */
+img{
+    width: 100%;
+ height: 150px;   
+  /* object-fit:contain; encaixa a imagem proporcional*/
+  /* object-fit: cover; corta a imagem */
+    object-position: center;
+}
+
 .grid div {
     border: 1px solid black;
     padding: 15px;
     display: flex;
-    min-height: 300px;
+    height: 290px;
     width: auto;
     flex-direction: column;
-    justify-content: space-between; /* Distribui o texto dentro do card se ele for alto */
+    justify-content:flex-start; /* Distribui o texto dentro do card se ele for alto */
+    
 }
 
 .rodape {
@@ -115,7 +162,6 @@ section {
 
     display: flex;
     flex-direction: column;
-
     flex: 1;
 }
 .C {
@@ -125,17 +171,36 @@ section {
     grid-template-columns: repeat(4, 1fr);
 
     justify-items: center;
-    align-items: center;
+   
 
-    text-align: center;
+    text-align:justify;
 
     flex: 1;
 }
 
 .fim{
+    
     display: flex;
-    justify-content: space-between;
+    align-self: center;
+    width: 80%;
+    justify-content:space-between;
+    justify-items: center;
     border-top: 1px solid black;
     padding-top: 20px;
     align-items: center;
+}
+
+#logotipo {
+    position: relative;
+    bottom: 15px;
+    border: 1px solid black;
+    padding: 15px;
+    
+}
+.H3-FINAL{
+     position: relative;
+    bottom: 10px;
+    
+    
+    
 }
