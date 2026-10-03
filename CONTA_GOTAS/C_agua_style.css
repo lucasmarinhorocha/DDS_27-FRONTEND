@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não estanquem a largura */
+}
+
+
+html, body {
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    min-height: 100vh; 
+    background-color: #0a4b73; /* A cor de fundo padrão do seu site */
+}
+
+@font-face {
+    font-family: "trebuc";
+    src: url("./Fontes/trebuc.ttf") format("truetype");
+}
+body {
+        font-family: "trebuc", sans-serif;
+    display: flex;
+    flex-direction: column;   
+    min-height: 100vh;       
+    background-color: #ffffff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background-color:#0a4b73 ;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: #2298e1;
+    padding: 10px;
+   
+}
+
+#lacima{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#cima{
+    list-style: none;
+    display: flex;
+    gap: 100px;
+
+}
+.menu{
+    margin-right: 30px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#img_topo{
+    margin-left: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover{
+    color: #ffffff;
+    font-size: 25px;
+    background-color: aqua;
+}
+
+.grid{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.grid div{
+ 
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 50px;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+
+}
+
+li{
+    color:#737373 ;
+}
+
+h2{
+    text-align: center;
+    color: #474747;
+}
+.rodape{
+    margin: 30px;
+}
+
+.rodape #final{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr)
+
+}
+footer{
+    background-color: #0a4b73;
+}
+
+.rodape div{
+    padding: 200px;
+    background-color: #2298e1;
+    border: 2px solid black;
+}
+
