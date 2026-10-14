@@ -60,7 +60,8 @@ main {
 
 main > h1 {
     font-size: 32px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 120px;
 }
 
 /* Container das imagens — colunas centralizadas */
@@ -87,7 +88,8 @@ main > h1 {
     border: 2px solid #000;
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
 
-    width: 240px;
+    width: 450px;
+    height: auto;
     transition: transform 0.2s ease;
 }
 
