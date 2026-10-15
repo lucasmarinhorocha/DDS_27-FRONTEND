@@ -67,23 +67,7 @@ function quemFoi(elementoQueChamou) {
     
 }
 
-59
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-30
-31
-32
-33
-84
-35
+
 
 // SEÇÃO 3
 // ALTERA O TEXTO

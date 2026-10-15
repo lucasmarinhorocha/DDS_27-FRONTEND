@@ -41,11 +41,33 @@ for (let index = 0; index < cardapio.length; index++) {
     
     
     console.log(`Protudo: ${cardapio[index].nome} \nPreço: ${cardapio[index].preço}`);
-    
-    
+}
+
+var pedido = prompt("INFORME QUAL PEDIDO VOCE VAI QUERER")
+var quantidade = parseInt(prompt("INFORME A QUANTIDADE"))
+var registro
+
+switch (pedido){
+    case "Hamburguer":
+        registro = 0
+        break
+    case "Coca cola":
+        registro = 1
+        break
+    case "Sorvete":
+        registro = 2
+        break
+}
+function calculo(quantidade,registro) {
+   return quantidade*cardapio[registro].preço
     
 }
 
+todospedidos = {}
+
+
+console.log(`Protudo: ${cardapio[registro].nome} || Peço total ${calculo(quantidade,registro)}`);
+todospedidos.pedido = cardapio[registro]
 /*
 console.log(cardapio[2]);
 
