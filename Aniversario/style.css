@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não estanquem a largura */
+}
+
+
+html, body {
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    min-height: 100vh; 
+    background-color: #0a4b73; /* A cor de fundo padrão do seu site */
+}
+
+@font-face {
+    font-family: "trebuc";
+    src: url("./Fontes/trebuc.ttf") format("truetype");
+}
+body {
+        font-family: "trebuc", sans-serif;
+    display: flex;
+    flex-direction: column;   
+    min-height: 100vh;       
+    background-color: #ffffff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background-color:#0a4b73 ;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+div p {
+font-size: 50px;
+color: goldenrod;
+background:linear-gradient(90deg,rgba(0, 131, 33, 0.534),rgb(3, 107, 177)) ;
+padding: 30px;
+border-radius: 90px;
+text-align: center;
+}
+img {
+    border: 5px dotted burlywood ;
+    margin: 80px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FELIZ ANIVERSARIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<main>
+    <div>
+        <img src="./047f6354-3717-400b-ad5a-0d61c63d8073.jpg" alt="Lindo">
+
+        <p>PARABENS</p>
+    </div>
+</main>
+
+<!-- Elemento de áudio (escondido) -->
+<audio id="audioAniversario" src="./WhatsApp Audio 2026-10-17 at 09.51.30.mpeg"></audio>
+
+<script>
+  function iniciarAudio() {
+    var audio = document.getElementById("audioAniversario");
+    audio.play();
+
+    // Remove os ouvintes para o áudio tocar apenas uma vez
+    document.removeEventListener("click", iniciarAudio);
+    document.removeEventListener("touchstart", iniciarAudio);
+  }
+
+  // Toca o áudio assim que a pessoa clicar ou tocar na tela pela primeira vez
+  document.addEventListener("click", iniciarAudio);
+  document.addEventListener("touchstart", iniciarAudio);
+</script>
+
+</body>
+</html>
